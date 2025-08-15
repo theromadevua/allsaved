@@ -1,4 +1,4 @@
-# Laravel + React S
+# Laravel + React
 
 Single Page Application with Laravel backend and React frontend for managing posts and users.
 
