@@ -1,0 +1,89 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-bg-body);
+    transition: background-color var(--transition-speed);
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--color-bg-surface);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow-md);
+    padding: 24px;
+    box-sizing: border-box;
+    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .pageTitle {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+    color: var(--color-text-primary);
+    transition: color var(--transition-speed);
+  }
+  
+  .contentBlock {
+    margin-top: 16px;
+    color: var(--color-text-primary);
+    transition: color var(--transition-speed);
+  }
+  
+  .modalFoot {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: var(--font-weight-normal);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  
+  .btnPrimary {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  .btnPrimary:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  .btnSecondary {
+    background-color: var(--color-btn-secondary-bg);
+    color: var(--color-btn-secondary-text);
+  }
+  
+  .btnSecondary:hover {
+    background-color: var(--color-btn-secondary-bg-hover);
+  }
+  
+  .btnError {
+    background-color: var(--color-error);
+    color: var(--color-text-light);
+  }
+  
+  .btnError:hover {
+    background-color: var(--color-error-hover);
+  }
+
+  .btnDanger {
+    background: var(--color-error);
+    color: var(--color-text-light);
+    border: none;
+    &:hover { background: var(--color-error-hover); }
+  }

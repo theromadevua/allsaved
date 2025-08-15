@@ -1,0 +1,111 @@
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; 
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.formInput {
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-muted);
+  color: var(--color-text-primary);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-surface);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); 
+}
+
+.formInputError {
+  border-color: var(--color-danger) !important;
+}
+
+.formInputError:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.formError {
+  font-size: 0.875rem;
+  color: var(--color-danger);
+  margin-top: -0.25rem; 
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.btn {
+  padding: 0.65rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  composes: btn;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.btnSecondary {
+  composes: btn;
+  background-color: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border-color: var(--color-border);
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background-color: var(--color-btn-secondary-bg-hover);
+  border-color: var(--color-border-hover);
+}
+
+.btnDanger {
+  composes: btn;
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.btnDanger:hover:not(:disabled) {
+  background-color: var(--color-danger-hover);
+  box-shadow: var(--box-shadow-sm);
+}

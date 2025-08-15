@@ -1,0 +1,10 @@
+.navLink {
+    color: var(--color-text-tertiary) !important;
+    transition: color var(--transition-speed) ease-in-out;
+  }
+  
+  .navLink:hover {
+    color: var(--color-text-secondary) !important;
+  }
+  
+  

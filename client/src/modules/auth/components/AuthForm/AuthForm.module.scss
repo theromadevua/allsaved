@@ -1,0 +1,66 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: var(--padding-sm);
+}
+
+.card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  width: 340px;
+  padding: var(--padding-md);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--padding-sm);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-primary);
+}
+
+.alertDanger {
+  background: var(--color-error);
+  color: var(--color-text-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+  margin-bottom: var(--padding-sm);
+}
+
+.btnFullWidth {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  font-weight: var(--font-weight-semibold);
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease;
+
+  &:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,164 @@
+.pageContainer {
+  padding: var(--padding-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.main {
+  width: 800px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--padding-md);
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--padding-sm);
+}
+
+.textMuted {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.textError {
+  color: var(--color-error);
+}
+
+.infoBox {
+  background: var(--color-bg-surface);
+  padding: var(--padding-sm);
+  border-radius: var(--border-radius-sm);
+  p{
+    margin: 0;
+  }
+}
+
+.dashboardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-md);
+}
+
+.statsBlock {
+  display: flex;
+  gap: var(--padding-sm);
+}
+
+.statItem {
+  flex: 1;
+  background: var(--color-bg-surface);
+  padding: var(--padding-sm);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  box-shadow: var(--box-shadow-sm);
+  transition: transform var(--transition-speed);
+  &:hover { transform: translateY(-2px); }
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.chart {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--box-shadow-sm);
+  border-radius: var(--border-radius-md);
+  padding: var(--padding-sm);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--padding-sm);
+}
+
+.contentBlock {
+  background: var(--color-bg-surface);
+  padding: var(--padding-sm);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.modalFoot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: var(--padding-sm);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--padding-sm);
+  
+  input, textarea {
+    padding: var(--padding-xs);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius-sm);
+    background: var(--color-bg-surface);
+    color: var(--color-text-primary);
+    
+    &::placeholder {
+      color: var(--color-text-secondary);
+    }
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+}
+
+.btn {
+  padding: var(--padding-xs) var(--padding-sm);
+  border-radius: var(--border-radius-sm);
+  font-weight: var(--font-weight-normal);
+  transition: background-color var(--transition-speed);
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  &:hover { background: var(--color-primary-hover); }
+}
+
+.btnSecondary {
+  background: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border: none;
+  &:hover { background: var(--color-btn-secondary-bg-hover); }
+}
+
+.btnDanger {
+  background: var(--color-error);
+  color: var(--color-text-light);
+  border: none;
+  &:hover { background: var(--color-error-hover); }
+}

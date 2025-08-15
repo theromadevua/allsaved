@@ -1,0 +1,19 @@
+.card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+
+}
+
+.cardBody {
+  padding: var(--padding-md);
+  text-align: left;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 1.5rem;
+}

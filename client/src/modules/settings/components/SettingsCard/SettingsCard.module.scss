@@ -1,0 +1,54 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-sm);
+    transition: background-color var(--transition-speed), border-color var(--transition-speed);
+  }
+  
+  .cardBody {
+    padding: 1.25rem;
+  }
+  
+  .cardTitle {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-primary);
+    transition: color var(--transition-speed);
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-semibold);
+    transition: background-color var(--transition-speed);
+  }
+  
+  .btn:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  .btnLogout {
+    background-color: var(--color-error);
+  }
+  
+  .btnLogout:hover {
+    background-color: var(--color-error-hover);
+  }
+  

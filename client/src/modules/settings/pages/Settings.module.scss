@@ -1,0 +1,12 @@
+.container {
+  padding: var(--padding-md);
+  background-color: var(--color-bg-body);
+  min-height: 100vh;
+  transition: background-color var(--transition-speed);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+  transition: color var(--transition-speed);
+}

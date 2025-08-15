@@ -1,0 +1,8 @@
+.linkHover {
+    transition: color var(--transition-speed);
+  
+    &:hover {
+      color: var(--color-primary) !important;
+    }
+  }
+  

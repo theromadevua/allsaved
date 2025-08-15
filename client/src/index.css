@@ -1,0 +1,12 @@
+@import './styles/variables.scss';
+
+body {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-body);
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
